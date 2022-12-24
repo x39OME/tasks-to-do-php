@@ -1,0 +1,43 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background: linear-gradient(217deg, #ffc107, rgba(255,0,0,0) 70.71%),
+  linear-gradient(127deg, #97bb30, rgba(0,255,0,0) 70.71%),
+  linear-gradient(336deg, #35a65f, rgba(0,0,255,0) 70.71%);
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.btn{
+  color: #2f4858;
+}
+.btn:hover{
+  background: transparent;
+  color: #000 !important;
+}
+.card-body ul li a{
+  font-size: 1em;
+  color: #00897a;
+  transition: .3s;
+}
+.card-body ul li a:hover{
+  color: #c1564c;
+  transform: scale(1.1);
+}
+.todo-item {
+  display: flex !important;
+  margin: 8px 0;
+  border-radius: 0;
+  background: #f7f7f7;
+}
+.todo-item.completed div {
+  text-decoration: line-through;
+}
+.todo-item-remove {
+  visibility: hidden;
+}
+.todo-item:hover .todo-item-remove {
+  visibility: visible;
+}
